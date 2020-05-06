@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:textAlignment="center"
+            android:textSize="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <EditText
+            android:id="@+id/etNumero1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/numero_1"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etNumero2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/numero_2"
+            android:inputType="numberDecimal" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnAdicao"
+            android:layout_width="169dp"
+            android:layout_height="match_parent"
+            android:layout_span="1"
+            android:layout_weight="17"
+            android:onClick="adicao"
+            android:text="@string/adicao" />
+
+        <Button
+            android:id="@+id/btnSubtracao"
+            android:layout_width="169dp"
+            android:layout_height="match_parent"
+            android:layout_span="1"
+            android:layout_weight="17"
+            android:onClick="subtracao"
+            android:text="@string/subtracao" />
+
+        <Button
+            android:id="@+id/btnDivisao"
+            android:layout_width="169dp"
+            android:layout_height="match_parent"
+            android:layout_span="1"
+            android:layout_weight="10"
+            android:onClick="divisao"
+            android:text="@string/divisao" />
+
+        <Button
+            android:id="@+id/btnMult"
+            android:layout_width="169dp"
+            android:layout_height="match_parent"
+            android:layout_span="1"
+            android:layout_weight="10"
+            android:onClick="multiplicacao"
+            android:text="@string/multi" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tvHistorico"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_span="2"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/btnLimpaHist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:text="@string/limpar"
+            android:textAlignment="gravity" />
+    </TableRow>
+</TableLayout>
